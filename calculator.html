@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Calculator</h1>
+            <div id="containerOperation">
+                <input id="first" type="text" maxlength="4" placeholder="0000">
+                <select id="operation" name="operation" selected="multiply">
+                    <option value="multiply">Multiply</option>
+                    <option value="divide">Divide</option>
+                    <option value="add">Add</option>
+                    <option value="substraction">Substraction</option>
+                    <option value="modulo">Modulo</option>
+                </select>
+                <input id="second" type="text" maxlength="4" placeholder="0000">
+            </div>
+            <div id="containerButton">
+                <button id="calculate" onclick="return false">Calculate</button>
+                <button id="calculateDesktop" onclick="return false">=</button>
+            </div>
+            <div id="containerResult">
+            <input id="result" type="text" disabled>
+            </div>
+        </form>
+    </main>
+<script src="js/calculator.js"></script>
+</body>
+</html>
