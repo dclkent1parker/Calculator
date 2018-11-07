@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <form>
+        <form action="php/sendform.php" method="POST">
             <div id="title"><h1>Form</h1></div>
             <div id="containerForm">
             <div id="left">
@@ -20,8 +20,8 @@
                 <div class="container">Date of birth <input type="date" name="birthday" id="birthday"></div>
             </div>
             <div id="right">
-                <div class="container" class="containerGender">Man <input type="radio" name="gender" id="man"></div>
-                <div class="container" class="containerGender">Woman <input type="radio" name="gender" id="woman"></div>
+                <div class="container" class="containerGender">Man <input type="radio" name="gender" value='man' id="man"></div>
+                <div class="container" class="containerGender">Woman <input type="radio" name="gender" value='woman' id="woman"></div>
                 <div class="container">Email <input type="text" name="email" id="email"></div>
                 <div class="container">Message <div id="containerMessage"><textarea type="text" name="message" id="message" maxlength="255" rows="6" ></textarea><p id="characters"></p></div></div>
             </div></div>
