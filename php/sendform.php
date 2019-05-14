@@ -17,14 +17,16 @@
     $genre= $_POST['gender'];
     $email= $_POST['email'];
     $message= $_POST['message'];
-    $headers .='Content-Type: text/html; charset="utf-8"'." ";
-    $headers .='Content-Transfer-Encoding: 8bit';
-    $headers ='From: '.$email." ";
+    
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .='From: '.$email." ". "\r\n".
+                'Content-Type: text/plain; charset="utf-8"'."\r\n".
+                'Content-Transfer-Encoding: 8bit';
     $mailtxt= "
             Formulaire de contact:
             
             Nom: ".$nom."
-            Prénom: ".$prenom."
+            Prenom: ".$prenom."
             Anniversaire: ".$anniversaire."
             Genre: ".$genre."
             Email: ".$email."
